@@ -1,3 +1,4 @@
+var PORT = process.env.PORT || 8080
 var http = require('http');
 var fs = require('fs');
 
@@ -30,4 +31,4 @@ io.sockets.on('connection', function (socket,pseudo) {
 });
 
 
-server.listen(8080);
+server.listen(PORT);
