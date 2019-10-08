@@ -20,8 +20,7 @@
 
         <script src="/socket.io/socket.io.js"></script>
         <script>
-            var PORT = process.env.PORT || 8080
-            var socket = io.connect('http://localhost:'+PORT);
+            var socket = io();//connect('http://localhost:'+PORT);
 
             var person = prompt("Please enter your name", "Harry");
             if(person)
